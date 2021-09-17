@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buscando el mejor resultado</title>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <form class="header__search-form">
+          <input
+            name="buscar"
+            class="header__search-input"
+            type="text"
+            placeholder="Ingrese su búsqueda"
+          />
+          <button class="header__search-button" type="text">Buscar</button>
+        </form>
+      </header>
+      <div class="content-results"></div>
+
+      <template id="result-item-template">
+        <main class="main">
+          <h2 class="main__title">El mejor producto para vos es:</h2>
+
+          <section class="product-box">
+            <a class="product__link-reference" target="_blank" href="">
+              <div class="product__container-img-title-price">
+                <div class="product__image">
+                  <img class="img" src="" />
+                </div>
+                <div class="product__container-title-price">
+                  <div>
+                    <h1 class="product__title"></h1>
+                  </div>
+
+                  <h3 class="product__price"></h3>
+                  <h5 class="product__item-sell">
+                    Vendidos:<span class="product__item-sell-count"></span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="product__description-container">
+                <h3 class="product__description-title">Descripción:</h3>
+                <p class="product__description"></p>
+              </div>
+            </a>
+          </section>
+        </main>
+      </template>
+    </div>
+  </body>
+</html>
